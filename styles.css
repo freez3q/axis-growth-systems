@@ -134,12 +134,14 @@ h3 { font-size: 1.35rem; }
 .orbit-2 { width: 380px; height: 380px; }
 .orbit-label {
   position: absolute;
+  z-index: 5;
   padding: 8px 12px;
   border-radius: 999px;
   background: rgba(255,255,255,0.06);
   border: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.9rem;
+  white-space: nowrap;
 }
 .orbit-top { top: 34px; }
 .orbit-right { right: 18px; }
@@ -498,10 +500,4 @@ body {
 
 /* Language switcher */
 .lang-switch{display:inline-flex;align-items:center;gap:6px;margin-left:8px;padding:4px;border:1px solid rgba(255,255,255,0.12);border-radius:999px;background:rgba(255,255,255,0.04)}
-.lang-btn{min-width:44px;height:36px;padding:0 12px;border-radius:999px;border:0;background:transparent;color:var(--muted);font:inherit;font-weight:700;cursor:pointer}.lang-btn.active{background:linear-gradient(135deg,#fff,#c7c9cc);color:#0E1520}.logo-stage .orbit-top{top:68px;left:50%;transform:translateX(-124%)}.logo-stage .orbit-bottom{bottom:58px;left:50%;transform:translateX(-2%)}.logo-stage .orbit-left{left:16px;top:50%;transform:translateY(-50%)}.logo-stage .orbit-right{right:14px;top:50%;transform:translateY(-50%)}@media (max-width:820px){.nav{gap:10px}.lang-switch{margin-left:0}}@media (max-width:640px){.logo-stage .orbit-top{top:34px;left:50%;transform:translateX(-116%)}.logo-stage .orbit-bottom{bottom:38px;left:50%;transform:translateX(-6%)}}
-
-
-/* Final orbit label alignment fix */
-.logo-stage .orbit-top{left:50% !important; right:auto !important; top:18px !important; transform:translateX(-50%) !important; text-align:center;}
-.logo-stage .orbit-bottom{left:50% !important; right:auto !important; bottom:18px !important; transform:translateX(-50%) !important; text-align:center;}
-@media (max-width:640px){.logo-stage .orbit-top{top:16px !important;}.logo-stage .orbit-bottom{bottom:16px !important;}}
+.lang-btn{min-width:44px;height:36px;padding:0 12px;border-radius:999px;border:0;background:transparent;color:var(--muted);font:inherit;font-weight:700;cursor:pointer}.lang-btn.active{background:linear-gradient(135deg,#fff,#c7c9cc);color:#0E1520}.logo-stage .orbit-top{top:24px;left:50%;transform:translateX(-50%)}.logo-stage .orbit-bottom{bottom:18px;left:50%;transform:translateX(-50%)}.logo-stage .orbit-left{left:16px;top:50%;transform:translateY(-50%)}.logo-stage .orbit-right{right:14px;top:50%;transform:translateY(-50%)}@media (max-width:820px){.nav{gap:10px}.lang-switch{margin-left:0}}@media (max-width:640px){.logo-stage .orbit-top{top:18px;left:50%;transform:translateX(-50%)}.logo-stage .orbit-bottom{bottom:12px;left:50%;transform:translateX(-50%)}}
