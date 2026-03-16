@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакти AXIS — Growth Systems</title>
+  <meta name="description" content="Зв'яжіться з AXIS, щоб обговорити запуск AI-системи росту бізнесу." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand"><img src="assets/logo-axis-mark.png" alt="AXIS logo" /><div><strong>AXIS</strong><span>Growth Systems</span></div></a>
+      <button class="menu-toggle" aria-label="Відкрити меню"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html">Головна</a>
+        <a href="services.html">Послуги</a>
+        <a href="cases.html">Кейси</a>
+        <a href="blog.html">Блог</a>
+        <a href="contact.html" class="active">Контакти</a>
+        <a href="#lead-form" class="btn btn-sm">Залишити заявку</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Контакти</p>
+        <h1>Обговоримо систему росту для вашого бізнесу</h1>
+        <p>Залиште заявку або зв’яжіться з нами напряму — допоможемо підібрати оптимальний формат запуску.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-card reveal">
+          <h2>Контактна інформація</h2>
+          <a href="tel:+380686080909">+38 068 608 09 09</a>
+          <a href="mailto:alex.metelskiy@gmail.com">alex.metelskiy@gmail.com</a>
+          <p>Формат роботи: Online</p>
+          <p>Географія: Україна та Європа</p>
+          <a href="https://instagram.com/Metelskiy_pro" target="_blank" rel="noreferrer">Instagram / Metelskiy_pro</a>
+        </div>
+
+        <form id="lead-form" class="lead-form reveal delay-1">
+          <h2>Онлайн-заявка</h2>
+          <label>
+            Ваше ім'я
+            <input type="text" name="name" placeholder="Ім'я" required />
+          </label>
+          <label>
+            Телефон або Telegram
+            <input type="text" name="phone" placeholder="Контакт для зв'язку" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="example@email.com" required />
+          </label>
+          <label>
+            Коротко про задачу
+            <textarea name="message" rows="6" placeholder="Опишіть бізнес, задачу та бажаний результат" required></textarea>
+          </label>
+          <button type="submit" class="btn">Надіслати заявку</button>
+          <p class="form-note">Форма відкриє ваш email-клієнт з готовим листом на адресу AXIS.</p>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-bottom simple"><span>© <span id="year"></span> AXIS — Growth Systems</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
