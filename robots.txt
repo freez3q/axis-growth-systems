@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://freez3q.github.io/axis-growth-systems/sitemap.xml
